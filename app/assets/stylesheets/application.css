@@ -48,9 +48,12 @@ table#movies th, table#movies td {
   padding: 4px;
   text-align: left;
 }
+<<<<<<< HEAD
 table#movies th.hilite {
   background-color: yellow;
 }
+=======
+>>>>>>> heroku/master
 #notice #warning {
   background: rosybrown;
   margin: 1em 0;
@@ -62,3 +65,10 @@ form label {
   font-weight: bold;
   color: maroon;
 }
+<<<<<<< HEAD
+=======
+
+table#movies th.hilite {
+    background-color: yellow;
+}
+>>>>>>> heroku/master

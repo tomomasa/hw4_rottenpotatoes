@@ -34,12 +34,15 @@ begin
 
     desc 'Run all features'
     task :all => [:ok, :wip]
+<<<<<<< HEAD
 
     task :statsetup do
       require 'rails/code_statistics'
       ::STATS_DIRECTORIES << %w(Cucumber\ features features) if File.exist?('features')
       ::CodeStatistics::TEST_TYPES << "Cucumber features" if File.exist?('features')
     end
+=======
+>>>>>>> heroku/master
   end
   desc 'Alias for cucumber:ok'
   task :cucumber => 'cucumber:ok'
@@ -49,12 +52,15 @@ begin
   task :features => :cucumber do
     STDERR.puts "*** The 'features' task is deprecated. See rake -T cucumber ***"
   end
+<<<<<<< HEAD
 
   # In case we don't have ActiveRecord, append a no-op task that we can depend upon.
   task 'db:test:prepare' do
   end
 
   task :stats => 'cucumber:statsetup'
+=======
+>>>>>>> heroku/master
 rescue LoadError
   desc 'cucumber rake task not available (cucumber not installed)'
   task :cucumber do
