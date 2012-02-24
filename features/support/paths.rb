@@ -29,7 +29,7 @@ module NavigationHelpers
     when /^the Similar Movies page for "(.*)"$/
       title = page_name.match(/"(.*)"/i)
       movie = Movie.find_by_title(title[0].delete("\""))
-      :director_path(movie), {:title => movie.title, :director = movie.director}
+      director_path(movie)
       
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
